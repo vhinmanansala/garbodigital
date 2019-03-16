@@ -23,3 +23,9 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
+
+@import "layouts/pages/home";
+
+@import "~owl.carousel/dist/assets/owl.carousel.min.css";
+@import "~owl.carousel/dist/assets/owl.theme.default.min.css";
+@import "~flexslider/flexslider.css";

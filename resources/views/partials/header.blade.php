@@ -1,10 +1,15 @@
-<header class="banner">
-  <div class="container">
-    <a class="brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a>
-    <nav class="nav-primary">
-      @if (has_nav_menu('primary_navigation'))
-        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
-      @endif
-    </nav>
-  </div>
-</header>
+<div id="header-container">
+    <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+            <div class="cell medium-3 large-3">
+                <a id="logo" href="{{ $site_url }}">
+                    <img src="{{ $logo['url'] }}">
+                </a>
+            </div>
+
+            <div class="cell medium-9 large-9 text-right">
+                @php wp_nav_menu(array('menu' => 'Main Menu', 'menu_class' => 'clearfix', 'container' => false)) @endphp
+            </div>
+        </div>
+    </div>
+</div>

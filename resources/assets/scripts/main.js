@@ -1,5 +1,7 @@
 // import external dependencies
 import 'jquery';
+import 'owl.carousel/dist/owl.carousel.min.js';
+import 'flexslider/jquery.flexslider-min.js';
 
 // Import everything from autoload
 import './autoload/**/*'

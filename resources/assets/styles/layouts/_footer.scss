@@ -1,0 +1,65 @@
+#footer-container {
+    background: #f9f9f9;
+    padding: 60px 0;
+
+    table, tbody {
+        background: none;
+        border: none;
+
+        td {
+            font-size: 14px;
+            vertical-align: top;
+            padding-left: 0;
+        }
+    }
+
+    tbody tr:nth-child(even) {
+        background: none;
+    }
+
+    h4.widget-title {
+        font-size: 16px;
+        margin-bottom: 20px;
+        position: relative;
+
+        &:before {
+            background: #e6e6e6;
+            content: '';
+            display: block;
+            height: 1px;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            top: 12px;
+            z-index: 1;
+        }
+
+        span {
+            background: #f9f9f9;
+            display: inline-block;
+            padding-right: 15px;
+            position: relative;
+            z-index: 9;
+        }
+
+        span {
+            color: inherit;
+            font-size: inherit;
+        }
+    }
+
+    #footer-sidebar-1 {
+        ul {
+            display: block;
+
+            li {
+                display: block;
+
+                a {
+                    font-size: 14px;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}

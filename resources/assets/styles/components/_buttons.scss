@@ -1,0 +1,10 @@
+body a.button {
+    background: #00b77f;
+    color: #ffffff;
+
+    &:hover {
+        background: none;
+        border: 1px solid #00b77f;
+        color: #00b77f;
+    }
+}

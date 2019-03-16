@@ -90,3 +90,18 @@ Container::getInstance()
             'view' => require dirname(__DIR__).'/config/view.php',
         ]);
     }, true);
+
+if (function_exists('acf_add_options_page')) {
+    acf_add_options_page(array(
+        'menu_title'    => 'Theme Settings',
+        'menu_slug'     => 'theme-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+}
+
+function custom_widget_title( $title ) {
+    $title = str_replace( '__br__', '<br/>', $title );
+    return $title;
+}    
+add_filter( 'widget_title', 'custom_widget_title' );

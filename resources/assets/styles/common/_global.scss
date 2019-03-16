@@ -1,0 +1,119 @@
+html, body {
+    height: 100%;
+    position: relative;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif !important;
+
+    .justified-center {
+        justify-content: center;
+    }
+
+    .flexslider {
+        border: none;
+        margin: 0;
+
+        .flex-control-nav {
+            bottom: 60px;
+            z-index: 999;
+
+            a {
+                background: rgba(255, 255, 255, .25);
+            }
+
+            a.flex-active {
+                background: #ffffff;
+            }
+        }
+    }
+
+    p, li, span, label, input, a, textarea, .button, table {
+        color: #717487;
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .fa, .fab, .fal, .far, .fas {
+        font-weight: 300;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: #181818;
+        font-family: 'Open Sans', sans-serif;
+
+        a {
+            font-family: inherit;
+            font-size: inherit;
+            transition-duration: .3s;
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: #6f7274;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 18px
+    }
+
+    .social-media {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+
+            a {
+                background: #7c7c7c;
+                border-radius: 100%;
+                color: #ffffff;
+                display: block;
+                height: 32px;
+                line-height: 2;
+                text-align: center;
+                transition-duration: .3s;
+                width: 32px;
+            }
+
+            .facebook:hover {
+                background: #4162A7;
+            }
+
+            .instagram:hover {
+                background: #CA329B;
+            }
+
+            .twitter:hover {
+                background: #53A2D2;
+            }
+
+            .pinterest:hover {
+                background: #CB2130;
+            }
+        }
+    }
+}

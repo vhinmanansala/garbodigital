@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use WP_Query;
 use Sober\Controller\Controller;
 
 class App extends Controller
@@ -29,5 +30,21 @@ class App extends Controller
             return __('Not Found', 'sage');
         }
         return get_the_title();
+    }
+
+    public function logo()
+    {
+        return get_field('logo', 'options');
+    }
+
+    public function socialMedias()
+    {
+        return get_field('social_medias', 'option');
+    }
+
+    public function projects()
+    {
+        $args = array('post_type' => 'project', 'posts_per_page' => 3);
+        return new WP_Query($args);
     }
 }
