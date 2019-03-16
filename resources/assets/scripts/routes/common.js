@@ -1,6 +1,11 @@
 export default {
   init() {
-    // JavaScript to be fired on all pages
+    $('.owl-carousel').owlCarousel({
+        autoplay: true,
+        loop: true,
+        nav: false,
+        items: 8,
+    });
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

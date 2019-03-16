@@ -12,6 +12,11 @@ class App extends Controller
         return get_bloginfo('name');
     }
 
+    public function site_url()
+    {
+        return get_bloginfo('url');
+    }
+
     public static function title()
     {
         if (is_home()) {
@@ -46,5 +51,35 @@ class App extends Controller
     {
         $args = array('post_type' => 'project', 'posts_per_page' => 3);
         return new WP_Query($args);
+    }
+
+    public function header_background()
+    {
+        return get_field('header_background');
+    }
+
+    public function sub_heading()
+    {
+        return get_field('sub_heading');
+    }
+
+    public function customers_title()
+    {
+        return get_field('customers_title');
+    }
+
+    public function customers_content()
+    {
+        return get_field('customers_content');
+    }
+
+    public function customer_logos()
+    {
+        return get_field('customer_logos');
+    }
+
+    public function customers_background()
+    {
+        return get_field('customers_background');
     }
 }

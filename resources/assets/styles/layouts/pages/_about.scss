@@ -1,0 +1,29 @@
+body.page-about {
+    .page-content {
+        padding: 80px 0;
+
+        .grid-container {
+            background: url('../images/dotted.png') no-repeat bottom right scroll transparent;
+        }
+    }
+
+    #our-team-section {
+        background: #f6f8fc;
+        padding: 80px 0;
+
+        h2 {
+            margin-bottom: 60px;
+        }
+
+        .team-member {
+            img {
+                display: block;
+                margin-bottom: 15px;
+            }
+
+            h6 {
+                margin: 0;
+            }
+        }
+    }
+}

@@ -31,23 +31,5 @@ class FrontPage extends Controller
         return get_field('about_link');
     }
 
-    public function customers_title()
-    {
-        return get_field('customers_title');
-    }
-
-    public function customers_content()
-    {
-        return get_field('customers_content');
-    }
-
-    public function customer_logos()
-    {
-        return get_field('customer_logos');
-    }
-
-    public function customers_background()
-    {
-        return get_field('customers_background');
-    }
+    
 }

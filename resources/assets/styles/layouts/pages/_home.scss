@@ -87,27 +87,4 @@ body.home {
         background: #f6f8fc;
         padding: 80px 0;
     }
-
-    #customer-section-container {
-        background: #f1f1f1;
-        padding-top: 80px;
-
-        .owl-carousel {
-            margin-top: 80px;
-
-            .owl-item img {
-                margin: 0 auto;
-                width: auto;
-            }
-        }
-
-        .owl-theme .owl-nav.disabled+.owl-dots {
-            margin-top: 40px;
-        }
-
-        .image-background {
-            display: block;
-            margin: 0 auto;
-        }
-    }
 }
