@@ -3,6 +3,25 @@ html, body {
     position: relative;
 }
 
+#services-title-container {
+    background: url('../images/dotted.png') no-repeat top left scroll transparent;
+    padding-top: 365px;
+}
+
+#call-to-action-container {
+    background-size: cover !important;
+    padding: 80px 0;
+
+    h2 {
+        color: #ffffff;
+    }
+
+    .button:hover {
+        border-color: #ffffff;
+        color: #ffffff;
+    }
+}
+
 body {
     font-family: 'Open Sans', sans-serif !important;
 
@@ -41,6 +60,7 @@ body {
     h1, h2, h3, h4, h5, h6 {
         color: #181818;
         font-family: 'Open Sans', sans-serif;
+        margin-bottom: 1.5rem;
 
         a {
             font-family: inherit;
@@ -138,5 +158,51 @@ body {
     .image-background {
         display: block;
         margin: 0 auto;
+    }
+}
+
+.accordion {
+    li {
+        border-bottom: 1px solid #ebecee;
+        padding-top: 25px;
+        position: relative;
+    }
+
+    p {
+        display: none;
+    }
+
+    a {
+        cursor: pointer;
+        display: block;
+        font-size: 0.875rem;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 3;
+        text-indent: 15px;
+        user-select: none;
+        width: 100%;
+
+        &:after {
+            -moz-transition: all 0.2s ease-in-out;
+            -webkit-transition: all 0.2s ease-in-out;
+            border-bottom: 1px solid #4a6e78;
+            border-right: 1px solid #4a6e78;
+            content: " ";
+            height: 8px;
+            position: absolute;
+            right: 10px;
+            top: 25px;
+            transform: rotate(-45deg);
+            transition: all 0.2s ease-in-out;
+            width: 8px;
+        }
+    }
+
+    a.active:after {
+        transform: rotate(45deg);
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
 }

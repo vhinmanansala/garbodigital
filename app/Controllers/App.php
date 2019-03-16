@@ -82,4 +82,19 @@ class App extends Controller
     {
         return get_field('customers_background');
     }
+
+    public function call_to_action_title()
+    {
+        return get_field('call_to_action_title');
+    }
+
+    public function call_to_action_link()
+    {
+        return get_field('call_to_action_link');
+    }
+
+    public function call_to_action_background()
+    {
+        return get_field('call_to_action_background');
+    }
 }

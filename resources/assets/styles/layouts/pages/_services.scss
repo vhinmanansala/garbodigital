@@ -1,0 +1,26 @@
+body.page-services {
+    .page-content {
+        padding: 80px 0;
+
+        .main-content {
+            margin-bottom: 40px;
+        }
+
+        ul.accordion {
+            h4 {
+                vertical-align: middle;
+            }
+
+            i {
+                color: #2293d7;
+                font-size: 24px;
+                margin-right: 30px;
+                vertical-align: middle;
+            }
+
+            p {
+                margin-left: 90px;
+            }
+        }
+    }
+}
