@@ -9,7 +9,7 @@
 
         <div class="grid-x grid-padding-x">
             <div class="cell medium-12 large-12">
-                <div class="owl-carousel owl-theme">
+                <div id="customer-carousel" class="owl-carousel owl-theme">
                     @foreach ($customer_logos as $customer_logo)
                         <div class="item">
                             <img src="{{ $customer_logo['logo']['url'] }}">

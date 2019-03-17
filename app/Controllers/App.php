@@ -85,16 +85,16 @@ class App extends Controller
 
     public function call_to_action_title()
     {
-        return get_field('call_to_action_title');
+        return get_field('call_to_action_title', 'options');
     }
 
     public function call_to_action_link()
     {
-        return get_field('call_to_action_link');
+        return get_field('call_to_action_link', 'options');
     }
 
     public function call_to_action_background()
     {
-        return get_field('call_to_action_background');
+        return get_field('call_to_action_background', 'options');
     }
 }

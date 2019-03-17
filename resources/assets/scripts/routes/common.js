@@ -1,6 +1,6 @@
 export default {
   init() {
-    $('.owl-carousel').owlCarousel({
+    $('#customer-carousel').owlCarousel({
         autoplay: true,
         loop: true,
         nav: false,
