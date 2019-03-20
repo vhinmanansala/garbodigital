@@ -1,0 +1,46 @@
+body.page-projects {
+    #portfolio-container {
+        .portfolio {
+            border: 1px solid #ebecee;
+            float: left;
+            margin-left: -1px;
+            position: relative;
+            transition-duration: .3s;
+            width: 25%;
+
+            &:hover img {
+                opacity: 1;
+                transition-duration: .3s;
+                visibility: visible;
+            }
+            
+            img {
+                display: block;
+                margin: 0;
+                opacity: 0;
+                visibility: hidden;
+                transition-duration: .3s;
+            }
+
+            .portfolio-content-container {
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+
+                .portfolio-content {
+                    display: table;
+                    height: 100%;
+                    width: 100%;
+
+                    div {
+                        display: table-cell;
+                        padding: 20px;
+                        vertical-align: bottom;
+                    }
+                }
+            }
+        }
+    }
+}

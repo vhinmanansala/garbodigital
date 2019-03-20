@@ -65,22 +65,22 @@ class App extends Controller
 
     public function customers_title()
     {
-        return get_field('customers_title');
+        return get_field('customers_title', 'options');
     }
 
     public function customers_content()
     {
-        return get_field('customers_content');
+        return get_field('customers_content', 'options');
     }
 
     public function customer_logos()
     {
-        return get_field('customer_logos');
+        return get_field('customer_logos', 'options');
     }
 
     public function customers_background()
     {
-        return get_field('customers_background');
+        return get_field('customers_background', 'options');
     }
 
     public function call_to_action_title()

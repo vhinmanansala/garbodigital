@@ -4,7 +4,10 @@
             <div class="cell medium-6 large-6 text-center">
                 @if (! is_singular('project'))
                     <h1>{!! App::title() !!}</h1>
-                    <p>{{ $sub_heading }}</p>
+
+                    @if ($sub_heading)
+                        <p>{{ $sub_heading }}</p>
+                    @endif
                 @endif
             </div>
         </div>

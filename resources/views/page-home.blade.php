@@ -29,7 +29,12 @@
         <div class="grid-x grid-padding-x">
             <div class="cell medium-5 large-5">
                 <div id="services-title-container">
-                    <h2>{{ $services_title }}</h2>
+                    <h2>
+                        <?php
+                            $shortcode = get_post_meta($post->ID,'services_title',true);
+                            echo do_shortcode($shortcode);
+                        ?>
+                    </h2>
                 </div>
             </div>
 

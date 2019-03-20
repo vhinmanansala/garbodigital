@@ -91,6 +91,8 @@ Container::getInstance()
         ]);
     }, true);
 
+require_once('inc/bfi-thumb.php');
+
 if (function_exists('acf_add_options_page')) {
     acf_add_options_page(array(
         'menu_title'    => 'Theme Settings',

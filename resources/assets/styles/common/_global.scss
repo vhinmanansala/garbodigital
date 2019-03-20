@@ -66,6 +66,12 @@ body {
         font-family: 'Open Sans', sans-serif;
         margin-bottom: 1.5rem;
 
+        span {
+            color: inherit;
+            font-family: inherit;
+            font-size: inherit;
+        }
+
         a {
             font-family: inherit;
             font-size: inherit;
