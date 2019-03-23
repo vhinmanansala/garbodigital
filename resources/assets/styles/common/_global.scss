@@ -57,6 +57,16 @@ body {
         font-family: 'Open Sans', sans-serif;
     }
 
+    a {
+        transition-duration: .3s;
+
+        &:hover {
+            color: #000000;
+            transition-duration: .3s;
+        }
+
+    }
+
     .fa, .fab, .fal, .far, .fas {
         font-weight: 300;
     }

@@ -10,14 +10,17 @@
 
         <div class="page-content">
             <div class="grid-container">
+                @include('partials.project-filter')
+
                 <div class="grid-x grid-padding-x">
                     <div class="cell large-12">
                         <div id="portfolio-container" class="clearfix">
                             @while($projects->have_posts()) @php($projects->the_post())
                                 @php($params = array( 'width' => 300, 'height' => 300 ))
+                                @php($thumbnail = get_field('header_background', get_the_ID()))
 
                                 <div class="portfolio">
-                                    <img src="{{ bfi_thumb($header_background['url'], $params) }}">
+                                    <img src="{{ bfi_thumb($thumbnail['url'], $params) }}">
 
                                     <div class="portfolio-content-container">
                                         <div class="portfolio-content">

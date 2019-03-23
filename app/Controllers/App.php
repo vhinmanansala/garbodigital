@@ -55,7 +55,7 @@ class App extends Controller
 
     public function header_background()
     {
-        return get_field('header_background');
+        return get_field('header_background', get_the_ID());
     }
 
     public function sub_heading()
@@ -96,5 +96,13 @@ class App extends Controller
     public function call_to_action_background()
     {
         return get_field('call_to_action_background', 'options');
+    }
+
+    public function project_types()
+    {
+        return get_terms([
+            'taxonomy' => 'project_type',
+            'hide_empty' => false,
+        ]);
     }
 }
