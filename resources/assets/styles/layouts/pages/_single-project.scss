@@ -9,6 +9,12 @@ body.single-project {
         strong {
             font-weight: normal;
         }
+
+        @include breakpoint(medium down) {
+            .cell {
+                margin-bottom: 30px;
+            }
+        }
     }
 
     #pagination-container {

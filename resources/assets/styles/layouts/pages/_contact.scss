@@ -1,0 +1,35 @@
+body.page-contact {
+    form {
+        margin-top: 40px;
+
+        .group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 14px;
+        }
+
+        input[type='text'], 
+        input[type='email'], 
+        textarea {
+            border: none;
+            border-bottom: 1px solid #ebecee;
+            box-shadow: none;
+            color: #717487;
+            padding-left: 0;
+            padding-right: 0;
+            resize: none;
+
+            &:focus {
+                border: none;
+                border-bottom: 1px solid #00b77f;
+                box-shadow: none;
+            }
+        }
+
+        br, p {
+            display: none;
+        }
+    }
+}

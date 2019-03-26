@@ -2,7 +2,7 @@
     <div class="grid-container">
         <div class="grid-x grid-padding-x justified-center">
             <div class="cell medium-10 large-10 text-center">
-                <h2>{!! $call_to_action_title !!}</h2>
+                <h4>{!! $call_to_action_title !!}</h4>
                 <a href="{{ $call_to_action_link }}" class="button">Start a project</a>
             </div>
         </div>

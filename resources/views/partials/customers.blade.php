@@ -2,7 +2,7 @@
     <div class="grid-container">
         <div class="grid-x grid-padding-x justified-center">
             <div class="cell medium-6 large-6 text-center">
-                <h2>{{ $customers_title }}</h2>
+                <h3>{{ $customers_title }}</h3>
                 <p>{{ $customers_content }}</p>
             </div>
         </div>

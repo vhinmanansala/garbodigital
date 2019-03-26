@@ -105,4 +105,9 @@ class App extends Controller
             'hide_empty' => false,
         ]);
     }
+
+    public function map()
+    {
+        return get_field('map');
+    }
 }

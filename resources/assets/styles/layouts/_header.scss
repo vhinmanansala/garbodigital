@@ -27,6 +27,11 @@
     background-size: cover !important;
     padding: 320px 0;
 
+    @include breakpoint(medium down) {
+        padding: 160px 0;
+        width: 100%;
+    }
+
     h1, p {
         color: #ffffff;
     }

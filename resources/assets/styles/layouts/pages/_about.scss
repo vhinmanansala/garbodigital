@@ -4,6 +4,21 @@ body.page-about {
 
         .grid-container {
             background: url('../images/dotted.png') no-repeat bottom right scroll transparent;
+
+            @include breakpoint(medium down) {
+                background: none;
+                text-align: center;
+
+                img {
+                    margin-bottom: 40px;
+                }
+            }
+
+            @include breakpoint(large above) {
+                img {
+                    display: none;
+                }
+            }
         }
     }
 

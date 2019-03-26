@@ -107,3 +107,9 @@ function custom_widget_title( $title ) {
     return $title;
 }    
 add_filter( 'widget_title', 'custom_widget_title' );
+
+function my_acf_init() {
+    acf_update_setting('google_api_key', 'AIzaSyCXCQNoWgUPrSVQqISK2exR3XeCECzw1gA');
+}
+
+add_action('acf/init', 'my_acf_init');

@@ -36,9 +36,18 @@ body.home {
                     div {
                         width: 42%;
 
+                        @include breakpoint(medium down) {
+                            padding: 0 0.9375rem;
+                            width: 100%;
+                        }
+
+                        @include breakpoint(large) {
+                            padding: 0 0.9375rem;
+                            width: 50%;
+                        }
+
                         h2 {
                             color: #ffffff;
-                            font-size: 42px;
                         }
 
                         p {
@@ -52,15 +61,34 @@ body.home {
 
     #services-section-container {
         margin-top: 60px;
-        padding-bottom: 120px;
 
         #services-title-container {
             background: url('../images/dotted.png') no-repeat top left scroll transparent;
             padding-top: 365px;
+
+            @include breakpoint(medium down) {
+                background: none;
+                padding-top: 0;
+
+                img {
+                    display: block;
+                    margin: 0 auto 40px;
+                }
+            }
+
+            @include breakpoint(large above) {
+                img {
+                    display: none;
+                }
+            }
         }
 
         #services-list {
             padding-top: 135px;
+
+            @include breakpoint(medium down) {
+                padding-top: 40px;
+            }
 
             .service {
                 border-bottom: 1px solid #ebecee;
@@ -86,5 +114,9 @@ body.home {
     #about-section-container {
         background: #f6f8fc;
         padding: 80px 0;
+
+        @include breakpoint(medium down) {
+            text-align: center;
+        }
     }
 }

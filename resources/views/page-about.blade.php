@@ -11,7 +11,8 @@
         <div class="page-content">
             <div class="grid-container">
                 <div class="grid-x grid-padding-x">
-                    <div class="cell medium-6 large-6">
+                    <div class="cell medium-12 large-6">
+                        <img src="@asset('images/dotted.png')">
                         {!! get_the_content() !!}
                     </div>
                 </div>
@@ -22,7 +23,7 @@
             <div class="grid-container">
                 <div class="grid-x grid-padding-x justified-center">
                     <div class="medium-6 large-6 text-center">
-                        <h2>{{ $meet_our_team_title }}</h2>
+                        <h3>{{ $meet_our_team_title }}</h3>
                     </div>
                 </div>
             </div>

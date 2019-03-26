@@ -15,21 +15,21 @@
                         <div class="meta-container">
                             <div class="grid-x grid-padding-x">
                                 @if ($client)
-                                    <div class="cell medium-3 large-3">
+                                    <div class="cell medium-4 large-3">
                                         <strong>Client:</strong><br>
                                         <span>{{ $client }}</span>
                                     </div>
                                 @endif
 
                                 @if ($roles)
-                                    <div class="cell medium-3 large-3">
+                                    <div class="cell medium-4 large-3">
                                         <strong>Role:</strong><br>
                                         <span>{{ implode($roles, ', ') }}</span>
                                     </div>
                                 @endif
                                 
                                 @if ($completion_date)
-                                    <div class="cell medium-3 large-3">
+                                    <div class="cell medium-4 large-3">
                                         <strong>Date:</strong><br>
                                         <span>{{ $completion_date }}</span>
                                     </div>

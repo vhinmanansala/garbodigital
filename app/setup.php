@@ -7,6 +7,8 @@ use Roots\Sage\Assets\JsonManifest;
 use Roots\Sage\Template\Blade;
 use Roots\Sage\Template\BladeProvider;
 
+define("THEME_DIR", get_template_directory_uri());
+
 /**
  * Theme assets
  */
@@ -15,6 +17,8 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans', false, null);
     wp_enqueue_style('fontawesome', 'https://pro.fontawesome.com/releases/v5.7.2/css/light.css', false, null);
     wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
+    wp_enqueue_script('google-map-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCXCQNoWgUPrSVQqISK2exR3XeCECzw1gA', ['jquery'], null, true);
+    wp_enqueue_script('sage/google-map.js', THEME_DIR . '/assets/scripts/google-map.js', ['jquery'], null, true);
 
     if (is_single() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
