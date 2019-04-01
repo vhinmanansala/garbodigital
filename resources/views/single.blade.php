@@ -60,13 +60,13 @@
                 <div class="grid-x grid-padding-x justified-center">
                     <div class="cell medium-10 large-10">
                         <div class="grid-x grid-padding-x">
-                            <div class="cell medium-6 large-6 text-left">
+                            <div class="cell small-6 medium-6 large-6 text-left">
                                 @if (get_previous_post())
                                     {{ previous_post_link('<strong>Previous project</strong><h4>%link</h4>') }}
                                 @endif
                             </div>
 
-                            <div class="cell medium-6 large-6 text-right">
+                            <div class="cell small-6 medium-6 large-6 text-right">
                                 @if (get_next_post())
                                     {{ next_post_link('<strong>Next project</strong><h4>%link</h4>') }}
                                 @endif

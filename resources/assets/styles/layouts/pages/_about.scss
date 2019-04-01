@@ -19,6 +19,18 @@ body.page-about {
                     display: none;
                 }
             }
+
+            @include breakpoint(small down) {
+                img {
+                    display: none;
+                }
+            }
+
+            @include breakpoint(landscape small down) {
+                img {
+                    display: none;
+                }
+            }
         }
     }
 
@@ -31,6 +43,15 @@ body.page-about {
         }
 
         .team-member {
+            @include breakpoint(portrait small down) {
+                margin-bottom: 15px;
+                text-align: center;
+
+                img {
+                    margin: 0 auto 15px;
+                }
+            }
+
             img {
                 display: block;
                 margin-bottom: 15px;

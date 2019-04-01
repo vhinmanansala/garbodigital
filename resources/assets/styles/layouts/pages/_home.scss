@@ -3,6 +3,10 @@ body.home {
         height: 95%;
         position: relative;
 
+        @include breakpoint(small down) {
+            height: 40%;
+        }
+
         div.flexslider, ul.slides, li.slide {
             height: 100%;
             position: relative;
@@ -73,6 +77,18 @@ body.home {
                 img {
                     display: block;
                     margin: 0 auto 40px;
+                }
+            }
+
+            @include breakpoint(small down) {
+                img {
+                    display: none;
+                }
+            }
+
+            @include breakpoint(landscape small down) {
+                img {
+                    display: none;
                 }
             }
 

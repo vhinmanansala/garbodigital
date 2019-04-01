@@ -4,7 +4,17 @@ export default {
         autoplay: true,
         loop: true,
         nav: false,
-        items: 8,
+        responsive: {
+            0:{
+                items:1,
+            },
+            600:{
+                items:3,
+            },
+            1000:{
+                items:8,
+            },
+        },
     });
 
     $('.accordion a').click(function(j) {

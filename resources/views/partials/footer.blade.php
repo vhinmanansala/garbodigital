@@ -1,15 +1,15 @@
 <footer id="footer-container">
     <div class="grid-container">
         <div class="grid-x grid-padding-x">
-            <div id="footer-sidebar-1" class="footer-sidebar cell medium-4 large-4">
+            <div id="footer-sidebar-1" class="footer-sidebar cell small-12 medium-4 large-4">
                 @php dynamic_sidebar('sidebar-footer') @endphp
             </div>
 
-            <div id="footer-sidebar-2" class="footer-sidebar cell medium-4 large-4">
+            <div id="footer-sidebar-2" class="footer-sidebar cell small-12 medium-4 large-4">
                 @php dynamic_sidebar('footer_sidebar_2') @endphp
             </div>
 
-            <div id="footer-sidebar-3" class="footer-sidebar cell medium-4 large-4">
+            <div id="footer-sidebar-3" class="footer-sidebar cell small-12 medium-4 large-4">
                 <h4 class="widget-title"><span>Follow Us</span></h4>
 
                 <ul class="social-media clearfix">
