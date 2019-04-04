@@ -1,6 +1,6 @@
 <div id="header-container">
     <div class="grid-container">
-        <div class="grid-x grid-padding-x">
+        <div class="grid-x grid-padding-x align-middle">
             <div class="cell small-4 medium-3 large-3">
                 <a id="logo" href="{{ $site_url }}">
                     <img src="{{ $logo['url'] }}">
