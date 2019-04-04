@@ -3,10 +3,6 @@ body.home {
         height: 95%;
         position: relative;
 
-        @include breakpoint(small down) {
-            height: 40%;
-        }
-
         div.flexslider, ul.slides, li.slide {
             height: 100%;
             position: relative;
