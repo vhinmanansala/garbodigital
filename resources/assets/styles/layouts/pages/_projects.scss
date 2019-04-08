@@ -78,10 +78,6 @@ body.archive {
                 width: 100%;
             }
 
-            @include breakpoint(landscape small down) {
-                width: 100%;
-            }
-
             &:hover img {
                 opacity: 1;
                 transition-duration: .3s;

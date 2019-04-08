@@ -4,6 +4,7 @@ export default {
         autoplay: true,
         loop: true,
         nav: false,
+        autoWidth:true,
         responsive: {
             0:{
                 items:1,

@@ -25,15 +25,16 @@ body.single-project {
         }
 
         h4 {
-            font-size: 18px;
+            color: #000000;
+            font-size: 24px;
             margin: 0;
 
             @include breakpoint(small down) {
                 display: none;
             }
 
-            @include breakpoint(landscape small down) {
-                display: none;
+            a {
+                color: #000000;
             }
         }
     }

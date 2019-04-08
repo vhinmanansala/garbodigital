@@ -49,7 +49,7 @@ class App extends Controller
 
     public function projects()
     {
-        $args = array('post_type' => 'project', 'posts_per_page' => 3);
+        $args = array('post_type' => 'project', 'posts_per_page' => -1);
         return new WP_Query($args);
     }
 

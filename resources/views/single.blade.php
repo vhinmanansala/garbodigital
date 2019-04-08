@@ -47,8 +47,9 @@
             <div id="project-gallery-container">
                 <div id="project-carousel" class="owl-carousel project-carousel owl-theme">
                     @foreach ($images as $image)
+                        @php($params = array('height' => 450 ))
                         <div class="item">
-                            <img src="{{ $image['url'] }}" alt="{{ $image['title'] }}">
+                            <img src="{{ bfi_thumb($image['url'], $params) }}" alt="{{ $image['title'] }}">
                         </div>
                     @endforeach
                 </div>
