@@ -2,7 +2,7 @@
     background: #f9f9f9;
     padding: 60px 0;
 
-    @include breakpoint(small-down) {
+    @include breakpoint(small down) {
         .cell {
             margin-bottom: 20px;
             width: 100%;

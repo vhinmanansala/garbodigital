@@ -1,4 +1,22 @@
 body.single-project {
+    .embed-container { 
+        height: auto;
+        max-width: 100%;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative; 
+    } 
+
+    .embed-container iframe,
+    .embed-container object,
+    .embed-container embed { 
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
     .meta-container {
         margin-bottom: 60px;
 
@@ -15,6 +33,10 @@ body.single-project {
                 margin-bottom: 30px;
             }
         }
+    }
+
+    #project-video-container {
+        margin-bottom: 60px;
     }
 
     #pagination-container {

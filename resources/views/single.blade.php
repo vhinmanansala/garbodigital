@@ -42,6 +42,22 @@
                 </div>
             </div>
         </div>
+
+        @if ($videos)
+            <div id="project-video-container">
+                <div class="grid-container">
+                    <div class="grid-x grid-padding-x  medium-up-2 large-up-2 justified-center">
+                        @foreach ($videos as $video)
+                            <div class="cell">
+                                <div class="embed-container">
+                                    {!! $video['video'] !!}
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        @endif
     
         @if ($images)
             <div id="project-gallery-container">

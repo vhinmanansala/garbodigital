@@ -25,4 +25,9 @@ class SingleProject extends Controller
     {
         return get_field('images');
     }
+
+    public function videos()
+    {
+        return get_field('videos');
+    }
 }
