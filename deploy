@@ -2,6 +2,6 @@
  
 ssh root@157.230.98.3 <<EOF
   cd /var/www/html/garbo/public/wp-content/themes/garbodigital
-  git pull
+  git pull origin master
   exit
 EOF
