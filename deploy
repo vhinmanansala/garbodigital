@@ -3,8 +3,5 @@
 ssh app@157.230.98.3 <<EOF
   cd /var/www/html/garbo/public/wp-content/themes/garbodigital
   git pull
-  composer install
-  yarn install
-  yarn build:production
   exit
 EOF
