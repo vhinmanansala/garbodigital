@@ -8,10 +8,6 @@
             <div class="cell medium-6 large-6 text-center">
                 @if (! is_singular('project'))
                     <h1>{!! get_the_title() !!}</h1>
-
-                    @if ($sub_heading)
-                        <p>{{ $sub_heading }}</p>
-                    @endif
                 @endif
             </div>
         </div>
