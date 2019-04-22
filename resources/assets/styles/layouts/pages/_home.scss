@@ -64,6 +64,7 @@ body.home {
 
         #services-title-container {
             background: url('../images/dotted.png') no-repeat top left scroll transparent;
+            padding-bottom: 60px;
             padding-top: 365px;
 
             @include breakpoint(medium down) {
@@ -105,7 +106,6 @@ body.home {
             .service {
                 border-bottom: 1px solid #ebecee;
                 margin-bottom: 25px;
-                padding-bottom: 25px;
 
                 &:last-child {
                     border: none;
@@ -117,7 +117,7 @@ body.home {
 
                 .far {
                     color: #2293d7;
-                    font-size: 48px;
+                    font-size: 25px;
                 }
             }
         }
