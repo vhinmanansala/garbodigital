@@ -14,7 +14,6 @@
                             <div class="slider-content">
                                 <div>
                                     <h2>{{ get_the_title() }}</h2>
-                                    <p>{{ get_the_excerpt() }}</p>
                                     <a href="{{ get_permalink() }}" class="button">View project</a>
                                 </div>
                             </div>

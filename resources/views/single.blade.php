@@ -95,5 +95,19 @@
         </div>
 
         @include('partials.call-to-action')
+
+        @section('scripts')
+            <script>
+                jQuery(window).load(function() {
+                    jQuery('#project-carousel').owlCarousel({
+                        autoplay: false,
+                        loop: true,
+                        nav: false,
+                        autoWidth:true,
+                        items: 4,
+                    });
+                });
+            </script>
+        @endsection
     @endwhile
 @endsection
