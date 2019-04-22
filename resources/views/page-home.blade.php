@@ -50,7 +50,6 @@
 
                             <div class="cell small-9 medium-10 large-10">
                                 <h6>{{ $service['title'] }}</h6>
-                                <p>{{ $service['content'] }}</p>
                             </div>
                         </div>
                     @endforeach
