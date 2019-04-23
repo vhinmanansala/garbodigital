@@ -30,12 +30,12 @@
                 <div id="services-title-container">
                     <img src="@asset('images/dotted.png')">
                     
-                    <h3>
+                    <h4>
                         <?php
                             $shortcode = get_post_meta($post->ID,'services_title',true);
                             echo do_shortcode($shortcode);
                         ?>
-                    </h3>
+                    </h4>
                 </div>
             </div>
 
